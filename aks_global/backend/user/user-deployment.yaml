@@ -27,7 +27,7 @@ spec:
               cpu: "1000m"
           env:
             - name: DATABASE_URL
-              value: "mysql://root:root@mysql-service:3306/user-db"  # Common database URL
+              value: "mysql://root:root@mysql-service:3306/userdb"
       imagePullSecrets:
         - name: acr-secret
 

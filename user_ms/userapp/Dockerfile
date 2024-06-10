@@ -33,8 +33,8 @@ RUN mkdir -p var/cache var/log public && \
     chown -R www-data:www-data var public && \
     chmod -R 775 var public
 
-# Expose port 8000 to the outside world
+# Expose port 8005 to the outside world
 EXPOSE 8005
 
-# Start PHP's built-in web server
+# Start PHP's built-in web server on HTTP
 CMD ["php", "-S", "0.0.0.0:8005", "-t", "public"]
